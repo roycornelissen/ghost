@@ -1,0 +1,13 @@
+{
+	"database": {
+		"client": "sqlite3",
+		"connection": {
+			"filename": "content/data/ghost.db"
+		}
+	},
+	"caching": {
+		"frontend": {
+			"maxAge": 3600
+		}
+	}
+}
