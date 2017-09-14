@@ -1,0 +1,40 @@
+<div class="menu-wrap">
+	<div class="close"><a class="close-button icon-close" id="close-button" href="#">Menu</a></div>
+	<div class="search">
+	<section class="results" id="results"></section>
+	<form class="search-form">
+		<input id="search-field" type="search" autocomplete="off" placeholder="Search...">
+		<a class="open-search icon-search" id="open-search" href="#"></a>
+		<a class="close-search icon-close-search" id="close-search" href="#"></a>
+	</form>
+	</div>
+	<nav class="menu-side">
+		{{#foreach navigation}}
+			<a href="{{url absolute="true"}}">{{label}}</a>
+		{{/foreach}}
+	</nav>
+	<div class="social-links">
+		<a class="social-link i-google-plus" href="https://plus.google.com/"></a>
+		<a class="social-link i-vk" href="https://vk.com/"></a>
+		{{#if @blog.facebook }}
+			<a class="social-link i-facebook" href="{{facebook_url}}"></a>
+		{{/if}}
+		{{#if @blog.twitter}}
+			<a class="social-link i-twitter" href="{{twitter_url}}"></a>
+		{{/if}}
+		<a class="social-link i-instagram" href="https://instagram.com/"></a>
+		<a class="social-link i-pinterest" href="https://www.pinterest.com/"></a>
+		<a class="social-link i-behance" href="https://www.behance.net/"></a>
+		<a class="social-link i-dribbble" href="https://dribbble.com/"></a>
+		<a class="social-link i-youtube" href="https://www.youtube.com/"></a>
+		<a class="social-link i-twitch" href="https://www.twitch.tv/"></a>
+		<a class="social-link i-in" href="https://www.linkedin.com/"></a>
+		<a class="social-link i-tumblr" href="https://www.tumblr.com/"></a>
+	</div>
+	<div class="subscribe"><a class="button--subscribe" href="{{@blog.url}}/rss/">Subscribe RSS</a></div>
+	{{#if @labs.subscribers}}
+		<div class="widget-area" role="complementary">
+			{{> "widgets"}}
+		</div>
+	{{/if}}
+</div>

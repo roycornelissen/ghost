@@ -1,0 +1,13 @@
+{{#get "posts" limit="3" as |recents|}}
+	<div class="widget recent-posts">
+		<h6>Recent Posts:</h6>
+		<ul>
+			{{#foreach recents}}
+				<li>
+					<a href="{{url}}">{{title}}</a>
+					<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+				</li>
+			{{/foreach}}
+		</ul>
+	</div>
+{{/get}}

@@ -1,0 +1,12 @@
+<header class="header">
+	<nav class="header-nav container">
+		{{#if @blog.logo}}
+			<a class="header-logo" href="{{@blog.url}}">
+				<img class="header-logo-img" src="{{@blog.logo}}" alt="{{@blog.title}}" />
+			</a>
+		{{/if}}
+		<a class="header-name" href="{{@blog.url}}">{{@blog.title}}</a>
+		<p class="header-desc">{{@blog.description}}</p>
+		<a class="header-button icon-menu" id="open-button" href="#">Menu</a>
+	</nav>
+</header>

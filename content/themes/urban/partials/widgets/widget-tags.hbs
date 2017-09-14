@@ -1,0 +1,16 @@
+<div class="widget featured-posts">
+	<h6>Tags:</h6>
+	<ul>
+		{{#get "tags" limit="all" include="count.posts" order="count.posts desc" filter="name:-['left', 'right']"}}
+			{{#foreach tags}}
+				<li>
+					<a href="/tag/{{slug}}">{{name}}
+						<span class="count">
+							{{plural count.posts empty='(%)' singular='(%)' plural='(%)'}}
+						</span>
+					</a>
+				</li>
+			{{/foreach}}
+		{{/get}}
+	</ul>
+</div>

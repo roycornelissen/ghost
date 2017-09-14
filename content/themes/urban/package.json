@@ -1,0 +1,33 @@
+{
+   "name": "urban",
+   "description": "Urban is a theme dedicated for Ghost. It’s built with latest technologies and support all major browsers.",
+   "demo": "https://demo.ghost.io",
+   "version": "1.3.1",
+   "engines": {
+      "ghost": ">=1.0.0"
+   },
+   "author": {
+      "name": "Dmitry Busyrev",
+      "email": "dmitrybusyrev@gmail.com"
+   },
+   "gpm": {
+      "type": "theme",
+      "categories": [
+         "blog",
+         "mobile",
+         "modern",
+         "photography",
+         "responsive",
+         "typography",
+         "vertical rhythm"
+      ]
+   },
+   "keywords": [
+      "ghost",
+      "theme"
+   ],
+
+   "config": {
+      "posts_per_page": 4
+   }
+}

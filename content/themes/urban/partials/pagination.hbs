@@ -1,0 +1,21 @@
+{{^is "paged"}}
+<nav class="pagination inner" role="navigation">
+	{{#if next}}
+	<a class="older-posts button" href="{{page_url next}}">Read older posts</a>
+	{{/if}}
+</nav>
+{{/is}}
+
+{{#is "paged"}}
+<nav class="pagination inner" role="navigation">
+	{{#if prev}}
+	<a class="newer-posts button icon-arrow-left" href="{{page_url prev}}">Read new posts</a>
+	{{/if}}
+	{{#if next}}
+	<a class="older-posts button icon-arrow-right" href="{{page_url next}}">Read older posts</a>
+	{{/if}}
+	<span class="page-number">Page {{page}} of {{pages}}</span>
+</nav>
+{{/is}}
+
+

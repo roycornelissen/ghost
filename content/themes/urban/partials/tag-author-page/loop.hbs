@@ -1,0 +1,13 @@
+{{#foreach posts}}
+	<article class="profile-tags-post">
+	    <header class="post-header">
+	        <h4 class="post-title"><a href="{{url}}">{{{title}}}</a></h4>
+	    </header>
+	    <footer class="post-meta">
+	        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{#is "tag"}}{{#author}}<a href="{{url}}">{{name}}</a>{{/author}} - {{/is}}{{date format="DD MMMM YYYY"}}</time>
+	    </footer>
+	</article>
+{{/foreach}}
+
+{{! Previous/next page links - displayed on every page }}
+{{pagination}}

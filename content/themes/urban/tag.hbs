@@ -1,0 +1,20 @@
+{{!< default}}
+{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
+
+<div class="container">
+	<section class="post profile-tags-author">
+		<div class="profile-tags-summary">
+			<h1 class="profile-tags-tittle">{{tag.name}}</h1>
+			{{#if tag.description}}
+				<h2 class="profile-tags-bio">{{tag.description}}</h2>
+			{{/if}}
+		</div>
+	</section>
+	<section class="post profile-tags">
+		<h3 class="profile-tags-post-by">Post by tag: {{tag.name}}</h3>
+
+		{{! The tag below includes the post loop - partials/loop.hbs }}
+		{{> "tag-author-page/loop"}}
+		
+	</section>
+</div>
